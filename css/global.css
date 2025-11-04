@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.topo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.barra-busca {
+    display: flex;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.barra-busca input {
+    width: 100%;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
+}
+
+.barra-busca button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+.barra-busca button img {
+    height: 25px;
+    margin-top: 4px;
+}
+
+.login-cadastro,
+.carrinho-link {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.login-cadastro img {
+    height: 31px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.login-cadastro a {
+    color: #333;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.login-cadastro:hover,
+.carrinho-link:hover{
+    background-color: #b8b5b553;
+}
+
+.carrinho-link img {
+    height: 31px;
+    display: block;
+    mix-blend-mode: multiply;
+}
+
+.carrinho-link{
+    position: relative;
+}
+
+.cart-badge{
+    position: absolute;
+    top: 0;  
+    right: 0;
+    background-color: #ff783a;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px;
+    height: 18px;
+    min-width: 18px;
+    transform: translate(25%, -25%);
+}
+
+.menu-principal {
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-principal li a {
+    display: block;
+    padding: 14px 22px;
+    text-decoration: none;
+    color: #4f4c4cbb;
+    font-weight: bold;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.menu-principal li a:hover {
+    text-decoration: underline;
+}
+
+.menu-principal li a[href="Promocoes.html"] {
+    color: #ec612ae4;
+    
+}
+
+.menu-principal li a[href="Promocoes.html"]:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #ff783a;
+    color: #f4f4f4;
+    padding: 40px 20px 10px 20px;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.footer-coluna {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-coluna h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f4f4f4; 
+    padding-bottom: 5px;
+}
+
+.footer-coluna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-coluna ul li {
+    margin-bottom: 10px;
+}
+
+.footer-coluna ul li a,
+.social-links a {
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-coluna ul li a:hover,
+.social-links a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #f4f4f4;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #5b5a5a;
+}
